@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">NFT Creator</string>
+    <string name="about_text">nft creator is android application to create NFT art</string>
+    <string name="website"></string>
+    <string name="email"></string>
+
+    <string name="more_app_url"></string>
+    <string name="term_and_condition_url"></string>
+    <string name="contact_us_url"></string>
+
+    <string name="press_again_exit_app">Press again to exit</string>
+    <string name="dialog_title_permission">Permission denied</string>
+    <string name="dialog_content_permission">
+        This feature required permission
+        \nGo to permission setting ?
+    </string>
+
+    <!--ActivityMain string data -->
+    <string name="menu_home">NFT Projec</string>
+    <string name="menu_exported">NFT Projec</string>
+    <string name="menu_add">NFT Projec</string>
+    <string name="menu_saved">NFT Projec</string>
+    <string name="menu_setting">NFT Projec</string>
+
+    <!-- Time Ago string data -->
+    <string name="just_now">Just now</string>
+    <string name="a_minute_ago">A minute ago</string>
+    <string name="minutes_ago">minute ago</string>
+    <string name="an_hour_ago">An hour ago</string>
+    <string name="hours_ago">Hours ago</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="days_ago">days ago</string>
+
+    <string name="menu_folder_location">Folder Location</string>
+    <string name="menu_push_notification">Push notification</string>
+    <string name="menu_vibrate">Vibrate</string>
+    <string name="menu_tnc"></string>
+    <string name="menu_rate_this"></string>
+    <string name="menu_more_app"></string>
+    <string name="menu_contact_us"></string>
+    <string name="menu_intro">Introduction</string>
+    <string name="menu_about">About</string>
+
+    <string name="develop_by">develop by Dream Space</string>
+    <string name="app_version">Build Version</string>
+    <string name="version_unknown">Unknown</string>
+
+    <string name="have_unsaved">You have unsaved changes, are you sure you want to exit?</string>
+    <string name="unsaved_changes">Unsaved changes</string>
+    <string name="clear_canvas_msg">Are you sure you want to clear the canvas?</string>
+    <string name="clear_canvas_tlt">Clear canvas</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_msg">Are you sure you want to delete?</string>
+    <string name="delete_tlt">Delete Project</string>
+    <string name="delete_exp_tlt">Delete Exported FIle</string>
+    <string name="delete_exp_msg">Are you sure you want to delete image?</string>
+
+
+    <string name="title_activity_intro">Introduction</string>
+    <!--Size three array below must be same -->
+    <string-array name="about_title_array">
+        <item>CREATE</item>
+        <item>EXPORT</item>
+        <item>PUBLISH</item>
+    </string-array>
+
+    <string-array name="about_description_array">
+        <item>nft pixel art</item>
+        <item>Export to image</item>
+        <item>Share nft and earn</item>
+    </string-array>
+
+    <integer-array name="about_images_array">
+        <item>@drawable/intro_1</item>
+        <item>@drawable/intro_3</item>
+        <item>@drawable/intro_2</item>
+    </integer-array>
+    <string name="Next">Next</string>
+    <string name="Skip">Skip</string>
+    <string name="LetsStart">Let\'s Start</string>
+    <string name="create">Create!</string>
+    <string name="new_nft_project">New NFT Project</string>
+    <string name="nft_creator_is_android_application_to_make_nft_art">NFT Creator is android application to make NFT art</string>
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.canvas.CanvasActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootLayoutActivityCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_soft">
+
+        <FrameLayout
+            android:id="@+id/activityCanvas_primaryFragmentHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/outerCanvasFragmentHostActivityCanvas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/background_main"
+            app:layout_constraintBottom_toTopOf="@+id/lytBarActivityHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/lytBarActivityHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_gradient_soft" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#0582CA"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/colorPrimaryLlActivityCanvas"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/spacing_16"
+                    android:background="@drawable/background_select_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/colorPrimaryCardActivityCanvas"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_gravity="center"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/colorPickerRecyclerViewActivityCanvas"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/colorPickerRecyclerViewActivityCanvas">
+
+
+                            <View
+                                android:id="@+id/colorPrimaryViewActivityCanvas"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@android:color/holo_blue_bright"/>
+
+                            <View
+                                android:id="@+id/colorPrimaryViewIndicatorActivityCanvas"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/border_drawable_frame_2"/>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/colorPickerRecyclerViewActivityCanvas"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/colorPrimaryLlActivityCanvas"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/item_color_picker" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/dark_overlay" />
+
+            <FrameLayout
+                android:id="@+id/tabLayoutFragmentHostActivityCanvas"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#013553" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

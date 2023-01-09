@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/spacing_24">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#013553"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/spacing_6">
+
+
+            <LinearLayout
+                android:id="@+id/lyt_folder_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_overlay"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/spacing_50"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_12"
+                    android:text="@string/menu_folder_location"
+                    android:fontFamily="@font/furore"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/spacing_18" />
+
+                <TextView
+                    android:id="@+id/folder_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_12"
+                    android:text="Folder Location"
+                    android:textColor="@color/tx_soft"
+                    android:textSize="@dimen/txt_xsmall"
+                    android:fontFamily="@font/furore"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/spacing_20"
+                android:background="@color/bg_field" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/spacing_20"
+                android:background="@color/bg_field" />
+
+            <LinearLayout
+                android:id="@+id/lyt_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_overlay"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/spacing_50"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/spacing_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_intro"
+                    android:fontFamily="@font/furore"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/spacing_18"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/spacing_20"
+                android:background="@color/bg_field" />
+
+            <LinearLayout
+                android:id="@+id/lyt_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_overlay"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/spacing_50"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/spacing_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_about"
+                    android:fontFamily="@font/furore"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/spacing_18" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    <TextView-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_gravity="center_horizontal"-->
+        <!--        android:layout_marginTop="@dimen/spacing_14"-->
+        <!--        android:text="@string/develop_by"-->
+        <!--        android:textColor="@color/tx_soft"-->
+        <!--        android:textSize="@dimen/txt_medium" />-->
+
+        <TextView
+            android:id="@+id/build_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_medium" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_56"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

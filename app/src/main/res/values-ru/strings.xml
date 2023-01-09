@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">NFT Creator</string>
+    <string name="about_text">nft creator приложение для создания NFT</string>
+    <string name="website"></string>
+    <string name="email"></string>
+
+    <string name="more_app_url"></string>
+    <string name="term_and_condition_url"></string>
+    <string name="contact_us_url"></string>
+
+    <string name="press_again_exit_app">Нажмите ещё раз, чтобы выйти</string>
+    <string name="dialog_title_permission">Permission denied</string>
+    <string name="dialog_content_permission">
+        This feature required permission
+        \nGo to permission setting ?
+    </string>
+
+    <!--ActivityMain string data -->
+    <string name="menu_home">NFT Projec</string>
+    <string name="menu_exported">NFT Projec</string>
+    <string name="menu_add">NFT Projec</string>
+    <string name="menu_saved">NFT Projec</string>
+    <string name="menu_setting">NFT Projec</string>
+
+    <!-- Time Ago string data -->
+    <string name="just_now">сейчас</string>
+    <string name="a_minute_ago">минуту назад</string>
+    <string name="minutes_ago">минут назад</string>
+    <string name="an_hour_ago">час назад</string>
+    <string name="hours_ago">часов назад</string>
+    <string name="yesterday">вчера</string>
+    <string name="days_ago">дней назад</string>
+
+    <string name="menu_folder_location">Расположение</string>
+    <string name="menu_push_notification">Push notification</string>
+    <string name="menu_vibrate">Vibrate</string>
+    <string name="menu_tnc"></string>
+    <string name="menu_rate_this"></string>
+    <string name="menu_more_app"></string>
+    <string name="menu_contact_us"></string>
+    <string name="menu_intro">Вступление</string>
+    <string name="menu_about">О приложении</string>
+
+    <string name="develop_by">develop by Dream Space</string>
+    <string name="app_version">Версия</string>
+    <string name="version_unknown">Unknown</string>
+
+    <string name="have_unsaved">У вас есть несохраненные изменения, вы уверены, что хотите выйти?</string>
+    <string name="unsaved_changes">Несохраненные изменения</string>
+    <string name="clear_canvas_msg">Вы уверены, что хотите очистить холст?</string>
+    <string name="clear_canvas_tlt">Oчистить холст</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete_msg">Вы уверены, что хотите удалить?</string>
+    <string name="delete_tlt">Удалить проект</string>
+    <string name="delete_exp_tlt">Удалить экспортированный файл</string>
+    <string name="delete_exp_msg">Вы уверены, что хотите удалить изображение?</string>
+
+
+    <string name="title_activity_intro">Introduction</string>
+    <!--Size three array below must be same -->
+    <string-array name="about_title_array">
+        <item>Создавай</item>
+        <item>Сохраняй</item>
+        <item>Делись</item>
+    </string-array>
+
+    <string-array name="about_description_array">
+        <item>nft изображения</item>
+        <item>к себе на телефон</item>
+        <item>и зарабатывай</item>
+    </string-array>
+
+    <integer-array name="about_images_array">
+        <item>@drawable/intro_1</item>
+        <item>@drawable/intro_3</item>
+        <item>@drawable/intro_2</item>
+    </integer-array>
+    <string name="Next">дальше</string>
+    <string name="Skip">пропустить</string>
+    <string name="LetsStart">Начать</string>
+    <string name="create">Создать!</string>
+    <string name="new_nft_project">Новый NFT проект</string>
+    <string name="nft_creator_is_android_application_to_make_nft_art">NFT Creator приложение для создания NFT</string>
+
+</resources>

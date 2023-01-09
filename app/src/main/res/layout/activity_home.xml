@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_soft"
+    android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbarActivityHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:elevation="6dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarActivityHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_bottom_tool_bar"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:title="@string/app_name"
+                    app:titleTextColor="@color/bg_bottom_tool_bar"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:fontFamily="@font/furore"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        />
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <FrameLayout
+                android:id="@+id/frameContainerActivityHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <FrameLayout
+                android:id="@+id/frameContainerExportedActivityHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <FrameLayout
+                android:id="@+id/frameContainerSavedActivityHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <FrameLayout
+                android:id="@+id/frameContainerSettingActivityHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <LinearLayout
+                android:id="@+id/lytBarActivityHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_6"
+                    android:background="@drawable/shape_gradient_soft" />
+
+                <LinearLayout
+                    android:id="@+id/lytBarContentActivityHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="bottom|end"
+                    android:background="@color/bg_bottom_tool_bar"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/spacing_24">
+
+                    <RelativeLayout
+                        android:id="@+id/menuProjectActivityHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onNavigationMenuClick"
+                        android:orientation="vertical"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <ImageView
+                            android:id="@+id/menuProjectImgActivityHome"
+                            android:layout_width="@dimen/spacing_36"
+                            android:layout_height="@dimen/spacing_36"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_list"
+                            app:tint="@color/white" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/menuExportedActivityHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onNavigationMenuClick"
+                        android:orientation="vertical"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <ImageView
+                            android:id="@+id/menuExportedImgActivityHome"
+                            android:layout_width="@dimen/spacing_36"
+                            android:layout_height="@dimen/spacing_36"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_image"
+                            app:tint="@color/white" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <RelativeLayout
+                        android:id="@+id/menuAddActivityHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onNavigationMenuClick"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/menuAddStripActivityHome"
+                            android:layout_width="@dimen/spacing_48"
+                            android:layout_height="@dimen/spacing_36"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/indicator_menu"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/menuAddImgActivityHome"
+                            android:layout_width="@dimen/spacing_40"
+                            android:layout_height="@dimen/spacing_40"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_add" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <RelativeLayout
+                        android:id="@+id/menuSettingsActivityHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onNavigationMenuClick"
+                        android:orientation="vertical"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <ImageView
+                            android:id="@+id/menuSettingsImgActivityHome"
+                            android:layout_width="@dimen/spacing_36"
+                            android:layout_height="@dimen/spacing_36"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_setting"
+                            app:tint="@color/white" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <RelativeLayout
+                        android:id="@+id/menuSavedActivityHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onNavigationMenuClick"
+                        android:orientation="vertical"
+                        android:paddingVertical="@dimen/spacing_4">
+
+                        <ImageView
+                            android:id="@+id/menuSavedImgActivityHome"
+                            android:layout_width="@dimen/spacing_36"
+                            android:layout_height="@dimen/spacing_36"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_saved"
+                            app:tint="@color/white" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

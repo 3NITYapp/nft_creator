@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activityMain_newProjectButton_contentDescription">Новый проект</string>
+
+    <string name="fragmentTools_clear_canvas_tool_content_description_">Очистить холст</string>
+    <string name="fragmentTools_color_palette_tool_content_description">Палитра</string>
+    <string name="fragmentTools_color_picker_tool_content_description">Выбрать цвет</string>
+    <string name="fragmentTools_eraser_tool_content_description">Ластик</string>
+
+    <string name="recentCreationsLayout_favoriteButton_content_description">Избранное</string>
+    <string name="recentCreationsLayout_imageView_content_description">Просмотр</string>
+
+    <string name="fragmentNewCanvas_span_count_str">Размер холста</string>
+    <string name="fragmentNewCanvas_project_name_str">Название</string>
+    <string name="fragmentTools_vertical_mirror_tool_content_description">Вертикальное зеркало</string>
+    <string name="fragmentTools_horizontal_mirror_tool_content_description">Горизонтальное зеркало</string>
+    <string name="fragmentTools_pencil_tool_content_description">Карандаш</string>
+
+    <string name="activityCanvas_tab_tools_str">Инструменты</string>
+    <string name="activityCanvas_tab_color_palettes_str">Палитры</string>
+    <string name="activityCanvas_checkerboardTransparentBackground_content_description">Прозрачная доска</string>
+
+    <string name="colorPalettesLayout_color_palette_item_str">Цвет клетки доски</string>
+
+    <string name="fragmentTools_fill_tool_content_description">Заполнить</string>
+    <string name="fragmentTools_line_tool_content_description">Линия</string>
+    <string name="fragmentTools_rectangle_tool_content_description">Квадрат</string>
+    <string name="fragmentTools_grid_tool_content_description">Сетка</string>
+
+    <string name="bottomNavigationMenu_starred_str">Снять</string>
+    <string name="bottomNavigationMenu_home_str">Домой</string>
+
+    <string name="fragmentColorPicker_tab_color_picker_str">Picker</string>
+    <string name="fragmentColorPicker_tab_rgb_str">RGB</string>
+
+    <string name="fragmentNewColorPalette_done_str">Готово</string>
+
+    <string name="fragmentRGBColorPicker_valueR_str">0</string>
+    <string name="fragmentRGBColorPicker_valueG_str">0</string>
+    <string name="fragmentRGBColorPicker_valueB_str">0</string>
+
+    <string name="appMenu_undo_str">Назад</string>
+    <string name="appMenu_redo_str">Вперед</string>
+    <string name="appMenu_save_as_png_str">Сохранить как PNG</string>
+    <string name="appMenu_save_as_jpg_str">Сохранить как JPG</string>
+    <string name="appMenu_reset_zoom_str">Сбросить зум</string>
+    <string name="appMenu_zoom_in_str">Приблизить</string>
+    <string name="appMenu_zoom_out_str">Отдалить</string>
+    <string name="appMenu_save_text_str">Сохранить</string>
+</resources>
